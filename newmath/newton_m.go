@@ -7,7 +7,7 @@ import (
 )
 
 func Sqrt(x float64) float64 {
-	z := 1.0    /* the initial value is 1.0*/
+	z := x / 2.0    /* the initial value is 1.0*/
     for i := 1; i <= 10; i++ {
 		z = z - (z*z-x)/2*z
 	}
