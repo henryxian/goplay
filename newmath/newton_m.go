@@ -7,11 +7,13 @@ import (
 )
 
 func Sqrt(x float64) float64 {
-	z := x / 2.0    /* the initial value is 1.0*/
-    for i := 1; i <= 10; i++ {
-		z = z - (z*z-x)/2*z
-	}
-	return z
+    var val = x
+    var last float64
+    for math.Abs(val - last) > 0.000000001{
+        last = val
+        val = (val + x/val) / 2
+    }
+    return val
 }
 
 func main() {
