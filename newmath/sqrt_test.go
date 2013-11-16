@@ -1,6 +1,9 @@
 package newmath
 
-import "testing"
+//import "testing"
+import (
+	"testing"
+)
 
 func TestSqrt(t *testing.T) {
 	const in, out = 4, 2
