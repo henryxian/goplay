@@ -18,7 +18,6 @@ func main() {
     }
     
     n[1] = Vertex{ 20,  20,}
-    
     fmt.Println(m["Bell Labs"])
     fmt.Println(n[1])
     
